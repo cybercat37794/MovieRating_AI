@@ -27,31 +27,33 @@ To run this project, you need to have Python installed along with the required l
 
 ```bash
 pip install -r requirements.txt
+```
 
 ## Usage
-### Preprocess the Data: Run the Movie_Data_Prep.ipynb notebook to preprocess the dataset. This step includes cleaning the data, handling missing values, and removing duplicates.
++ Preprocess the Data: Run the Movie_Data_Prep.ipynb notebook to preprocess the dataset. This step includes cleaning the data, handling missing values, and removing duplicates.
 
-### Train the Model: Use the movie_rating_model2_BERD.py script to train the transformer model on the preprocessed dataset. The script includes data tokenization, model building, training, and evaluation.
++ Train the Model: Use the movie_rating_model2_BERD.py script to train the transformer model on the preprocessed dataset. The script includes data tokenization, model building, training, and evaluation.
 
-### Evaluate the Model: The script will output the accuracy, precision, recall, and F1 score of the model on the test set.
++ Evaluate the Model: The script will output the accuracy, precision, recall, and F1 score of the model on the test set.
 
 ## Model
 The project uses transformer models such as BERT and RoBERTa for predicting movie ratings. The models are fine-tuned on the movie plot summaries to classify the ratings into three categories: Good, Average, and Bad.
 
 ### Model Architecture
-Input Layer: Tokenized movie plot summaries.
-Transformer Layer: Pre-trained transformer model (BERT or RoBERTa).
-Dense Layers: Fully connected layers with ReLU activation.
-Output Layer: Softmax activation for multi-class classification.
-Training
-Optimizer: AdamW
-Loss Function: Sparse Categorical Crossentropy
-Metrics: Accuracy, Precision, Recall, F1 Score
-Results
+*Input Layer: Tokenized movie plot summaries.
+**Transformer Layer: Pre-trained transformer model (BERT or RoBERTa).
+*Dense Layers: Fully connected layers with ReLU activation.
+*Output Layer: Softmax activation for multi-class classification.
+### Training
+*Optimizer: AdamW
+*Loss Function: Sparse Categorical Crossentropy
+*Metrics: Accuracy, Precision, Recall, F1 Score
+
+### Results
 The model's performance is evaluated using accuracy, precision, recall, and F1 score. The results are printed after the training process.
 
-Contributing
+### Contributing
 Contributions are welcome! If you have any suggestions or improvements, please create a pull request or open an issue.
 
-License
+### License
 This project is licensed under the MIT License. See the LICENSE file for more details.
