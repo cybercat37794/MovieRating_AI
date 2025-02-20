@@ -30,24 +30,25 @@ pip install -r requirements.txt
 ```
 
 ## Usage
-+ Preprocess the Data: Run the Movie_Data_Prep.ipynb notebook to preprocess the dataset. This step includes cleaning the data, handling missing values, and removing duplicates.
+1. **Preprocess the Data:** Run the Movie_Data_Prep.ipynb notebook to preprocess the dataset. This step includes cleaning the data, handling missing values, and removing duplicates.
 
-+ Train the Model: Use the movie_rating_model2_BERD.py script to train the transformer model on the preprocessed dataset. The script includes data tokenization, model building, training, and evaluation.
+2. **Train the Model:** Use the movie_rating_model2_BERD.py script to train the transformer model on the preprocessed dataset. The script includes data tokenization, model building, training, and evaluation.
 
-+ Evaluate the Model: The script will output the accuracy, precision, recall, and F1 score of the model on the test set.
+3. **Evaluate the Model:** The script will output the accuracy, precision, recall, and F1 score of the model on the test set.
 
 ## Model
 The project uses transformer models such as BERT and RoBERTa for predicting movie ratings. The models are fine-tuned on the movie plot summaries to classify the ratings into three categories: Good, Average, and Bad.
 
 ### Model Architecture
-*Input Layer: Tokenized movie plot summaries.
-**Transformer Layer: Pre-trained transformer model (BERT or RoBERTa).
-*Dense Layers: Fully connected layers with ReLU activation.
-*Output Layer: Softmax activation for multi-class classification.
+* **Input Layer:** Tokenized movie plot summaries.
+* **Transformer Layer:** Pre-trained transformer model (BERT or RoBERTa).
+* **Dense Layers:** Fully connected layers with ReLU activation.
+* **Output Layer:** Softmax activation for multi-class classification.
+
 ### Training
-*Optimizer: AdamW
-*Loss Function: Sparse Categorical Crossentropy
-*Metrics: Accuracy, Precision, Recall, F1 Score
+* **Optimizer:** AdamW
+* **Loss Function:** Sparse Categorical Crossentropy
+* **Metrics:** Accuracy, Precision, Recall, F1 Score
 
 ### Results
 The model's performance is evaluated using accuracy, precision, recall, and F1 score. The results are printed after the training process.
